@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.back-img{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./../public/food_Background.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+.back-cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.471);
+}
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px;
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+.page{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: white;
+    color: black;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 2;
+}
+
+.nav-toggle:checked + .nav-toggle-label + .page .sidebar {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+.sidebar ul li:hover{
+    background-color: rgba(0, 0, 0, 0.337);
+}
+.sidebar ul li a {
+    color: #464255;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.sidebar ul li a i{
+    padding: 8px;
+}
+.social-media{
+    position: absolute;
+    left: 10%;
+    top: 95vh;
+}
+.social-media a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(6, 114, 157);
+    padding: 10px;
+}
+.social-media a:hover{
+    color: blue;
+    background-color: rgba(0, 0, 0, 0.337);
+}
+.page .offer{
+    position: absolute;
+    left: 7rem;
+    top: 35%;
+    width: 20%;
+    height: 40vh;
+    border-radius: 50%;
+    background-image: url("./../public/offers.webp");
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    right: 0px;
+    width: 75%;
+    text-align: center;
+}
+.content h1{
+    margin: 10px;
+    width: 60%;
+    background-color: rgb(225, 34, 34);
+    color: white;
+    padding: 10px;
+    border-radius: 1rem;
+}
+.content .search-bar{
+    position: absolute;
+    top: 20px;
+    width: 25%;
+    right: 20px;
+}
+.content .search-bar input{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.content .search-bar button{
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: red;
+    color: white;
+}
+.content .search-bar input,
+.content .search-bar button{
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.details .text{
+    width: 65%;
+    background-color: rgba(0, 0, 0, 0.508);
+    border: 1px solid white;
+}
+.details #welcome{
+    font-size: 3rem;
+    padding: 10px;
+    margin: 10px;
+    color: yellow;
+    font-weight: bolder;
+}
+.details #serve{
+    color: orange;
+    margin-bottom: 20px;
+}
+.details .card-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+.details .card{
+    width: 30%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card-img-1{
+    height: 50%;
+    background-image: url("./../public/Card1.jpg");
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.card-img-2{
+    height: 50%;
+    background-image: url("./../public/Card2.jpg");
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.card p{
+    margin: 15px;
+}
+.card button{
+    border: 2px solid red;
+    font-size: 1rem;
+    font-weight: bold;
+    color: red; 
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
