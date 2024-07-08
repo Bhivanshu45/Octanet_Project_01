@@ -6,7 +6,7 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-image: url("./../public/food_Background.jpg");
+    background-image: url("./food_Background.jpg");
     background-size: cover;
     z-index: -1;
 }
@@ -96,7 +96,7 @@
     width: 20%;
     height: 40vh;
     border-radius: 50%;
-    background-image: url("./../public/offers.webp");
+    background-image: url("./offers.webp");
     background-size: cover;
 }
 
@@ -167,13 +167,13 @@
 }
 .card-img-1{
     height: 50%;
-    background-image: url("./../public/Card1.jpg");
+    background-image: url("./Card1.jpg");
     background-size: cover;
     margin-bottom: 25px;
 }
 .card-img-2{
     height: 50%;
-    background-image: url("./../public/Card2.jpg");
+    background-image: url("./Card2.jpg");
     background-size: cover;
     margin-bottom: 25px;
 }
